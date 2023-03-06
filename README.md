@@ -223,7 +223,7 @@ Now it's time to deploy our application to Azure. To do this, we first have to s
 * Resource Group: Create a new with a name you decide, a suggestion is cicd-ws
 
 **Instance Details**
-* Name: *This name has to be gobally unique, a suggestion is cicd-demo-ws-[your name or a number]*
+* Name: *This name has to be globally unique, a suggestion is cicd-demo-ws-[your name or a number]*
 * Publish: Code
 * Runtime stack: .NET 6 (LTS)
 * Operating System: Windows
@@ -242,7 +242,7 @@ Now it's time to deploy our application to Azure. To do this, we first have to s
 5. Click Review + create, as we don't need to configure anything on the other tabs for this workshop. Check that your configuration looks like this, but with the names you decided:
 <img width="340" alt="image" src="https://user-images.githubusercontent.com/125378671/221606059-119d75d2-68e4-4445-99e2-5f477672244a.png">
 
-6. Click Create, the ceration can take a few minutes. When it's done, click Go to resource. 
+6. Click Create, the creation can take a few minutes. When it's done, click Go to resource. 
 
 <img width="584" alt="image" src="https://user-images.githubusercontent.com/125378671/221569711-f1be2690-d10c-4e93-b52f-96d6313e74f6.png">
 
@@ -317,7 +317,7 @@ in the CI job. If you click an action you'll see how to use them in your YAML fi
 
 16. Add a job that deploys to Azure. For this, we'll use the keyword *id* which has to be the same as the second part of the url value in the environments variables we created in step 8. Also notice that the *uses* keyword gets this action from Azure instead of Actions, since this action is created by Azure. 
 
-Replace the app-name value with the name you created in Azure. The publish-profile will get the publish profile secret we created earlier, it contains the credentals we need to deploy to our Azure Web App.
+Replace the app-name value with the name you created in Azure. The publish-profile will get the publish profile secret we created earlier, it contains the credentials we need to deploy to our Azure Web App.
 
 ```yml
   steps:
